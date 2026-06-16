@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Alien+Block&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@400;550;700&family=JetBrains+Mono:wght@400;700&family=Syne:wght@800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", system-ui, -apple-system, sans-serif;
+  --font-display: "Syne", sans-serif;
+  --font-alien: "Alien Block", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    @apply font-sans bg-white text-black antialiased overflow-x-hidden selection:bg-black selection:text-white;
+  }
+
+  /* Universal lock to prevent shadows and rounded corners, enforcing raw brutalism */
+  * {
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+}
+
+/* Hard industrial scrollbar style */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-left: 2px solid #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
+
+

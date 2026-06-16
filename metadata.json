@@ -1,0 +1,6 @@
+{
+  "name": "Personal Portfolio & Guestbook",
+  "description": "An elegant, highly interactive and responsive personal website featuring a custom portfolio showcase, professional timeline, and a live local message wall (Guestbook) for visitors.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
